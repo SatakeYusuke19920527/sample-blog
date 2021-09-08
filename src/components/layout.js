@@ -1,0 +1,20 @@
+// src/components/layout.js
+import React from "react"
+import "../styles/style.css"
+import Header from "./header"
+import Footer from "./footer"
+
+// 小文字に変えてみた
+const Layout = ({ children }) => {
+    return (
+        <div className="layout">
+            <Header />
+            <main
+                className="layout-body"
+            >{children}</main>
+            <Footer />
+        </div>
+    );
+}
+
+export default Layout
